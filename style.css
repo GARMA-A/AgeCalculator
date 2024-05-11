@@ -1,0 +1,412 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Quicksand:wght@500;700&display=swap");
+
+*
+{
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+       font-size: inherit;
+
+
+}
+html
+{
+       font-size: 62.5%;
+       font-family: "Quicksand";
+       overflow: hidden;
+
+}
+/*****************/
+/*THE ALL LAYOUT*/
+.all
+{
+       width: 100vw;
+       height: 100vh;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       background-image: linear-gradient(to left bottom, rgba(0, 126, 229, 0.175), rgb(2, 17, 34), rgb(2, 17, 34), rgb(2, 17, 34), rgb(2, 17, 34), rgb(2, 17, 34),
+                     rgb(6, 20, 36),
+                     rgb(8, 22, 38),
+                     rgba(0, 127, 230, 0.154));
+                     
+                    
+}
+.title
+{
+       color: #a6bacb;
+       font-size: 2rem;
+       font-family: "Monoton";
+       letter-spacing: 0.5rem;
+       margin-bottom: 2rem;
+
+}
+/*******************************/
+/* THIS IS THE MAIN CONTAINER */
+.container
+{
+       display: grid;
+       grid-template-rows: repeat(3,1fr);
+       justify-items:center ;
+       width: 35rem;
+       height: 45rem;
+       background-image:
+       linear-gradient(to right bottom,
+                     rgba(0, 48, 88, 0.264),
+                     rgb(2, 9, 24),
+                     rgb(2, 9, 24),
+                     rgb(2, 9, 24),
+                     rgba(0, 50, 90, 0.254));
+       border-radius: 2rem;
+       z-index: 100;
+      
+}
+.txt
+{
+       margin: 2rem;
+       color: #a6bacb;
+       font-size: 2.75rem;
+       text-align: center;
+
+
+}
+
+.inputFeild
+{
+       border-radius: 0.2rem;
+       outline: none;
+       border: none;
+       background-color: rgb(193, 239, 239);
+       width: 20rem;
+       height: 3rem;
+       font-size: 2rem;
+       cursor: pointer;
+       /*****/
+       grid-row: 2/3;
+       grid-column: 1/2;
+       align-self: start;
+       /******/
+     
+      
+       
+
+}
+.submitBtn
+{
+       width: 12rem;
+       height: 4.5rem;
+       outline: none;
+       border: none;
+       border-radius: 0.5rem;
+       background-image: linear-gradient(to right , #8ec8cc,#2a5fb3);
+       transition: all 0.3s;
+       font-size: 1.75rem;
+       letter-spacing: 0.1rem;
+       cursor: pointer;
+       /******/
+       grid-row: 2/3;
+       grid-column: 1/2;
+       align-self: center;
+       /******/
+
+}
+.submitBtn:active {
+       transform: scale(0.95);
+}
+
+.Result
+{
+       margin: 0.5rem;
+              color: #a6bacb;
+              font-size: 1.5rem;
+              text-align: center;
+              font-weight: 800;
+              align-self: start;
+              grid-row: 3/4;
+                     grid-column: 1/2;
+
+}
+.msg
+{
+             grid-row: 3/4;
+              grid-column: 1/2;
+              align-self: center;
+}
+
+/******************************************/
+/* ANIMATION AND EXTERNAL CLASSES FOR JS */
+.invisible
+{
+       display: none;
+}
+
+.containerAnimation
+{
+              animation-name: goFrontAndBack;
+              animation-duration: 4s;
+              animation-iteration-count: infinite;
+              animation-timing-function: linear;
+              animation-fill-mode: backwards;
+
+}
+
+@keyframes goFrontAndBack
+{
+       0%
+       {
+              transform: scale(1.05);
+              
+       }
+       50%
+       {
+              transform: scale(1.0);
+              
+       }
+       100%
+       {
+              transform: scale(1.05);
+
+       }
+}
+
+.submitBtn:hover {
+      
+       animation-name: hoverOnSubmitBtn;
+       animation-duration: 2s;
+      animation-iteration-count: infinite;
+       animation-timing-function: linear;
+       animation-fill-mode: backwards;
+   
+      
+      
+}
+
+@keyframes hoverOnSubmitBtn
+{
+       0%
+       {
+              background-image: linear-gradient(to right, #8ec8cc, #2a5fb3);
+
+       }
+       5%
+       {
+       background-image: linear-gradient(to right, #8ea7cc, #2a4fb3);
+
+       }
+       10%
+       {
+background-image: linear-gradient(to right, #8ea0cc, #2a48b3);
+       }
+       15%
+       {
+
+       background-image: linear-gradient(to right, #8e9dcc, #2a3fb3);
+       }
+       20%
+       {
+background-image: linear-gradient(to right, #8e97cc, #2a3ab3);
+       }
+       25%
+       {
+background-image: linear-gradient(to right, #928ecc, #2a2cb3);
+       }
+       30%
+       {
+background-image: linear-gradient(to right, #928ecc, #382ab3);
+       }
+       35%
+       {
+background-image: linear-gradient(to right, #928ecc, #382ab3);
+       }
+       40%
+       {
+background-image: linear-gradient(to right, #928ecc, #382ab3);
+       }
+       45%
+       {
+background-image: linear-gradient(to right, #928ecc, #382ab3);
+       }
+       50%
+       {
+         background-image: linear-gradient(to right, #978ecc, #352ab3);
+       }
+       55%
+       {
+       background-image: linear-gradient(to right, #908ecc, #2a2ab3);
+       }
+       60%
+       {
+       background-image: linear-gradient(to right, #8e95cc, #2a35b3);
+       }
+       65%
+       {
+       background-image: linear-gradient(to right, #8e9ccc, #2a4ab3);
+       }
+       70%
+       {
+       background-image: linear-gradient(to right, #8ea4cc, #2a63b3);
+       }
+       75%
+       {
+       background-image: linear-gradient(to right, #8eabcc, #2a73b3);
+       }
+       80%
+       {
+       background-image: linear-gradient(to right, #8eb7cc, #2a73b3);
+       }
+       85%
+       {
+       background-image: linear-gradient(to right, #8eb7cc, #2a65b3);
+       }
+       90%
+       {
+background-image: linear-gradient(to right, #8ec8cc, #2a5fb3);
+       }
+       95%
+       {
+background-image: linear-gradient(to right, #8ec8cc, #2a5fb3);
+       }
+       100%
+       {
+              background-image: linear-gradient(to right, #8ec8cc, #2a5fb3);
+              
+       }
+}
+
+span {
+       position: absolute;
+       top: 5%;
+       left: 50%;
+       width: 4px;
+       height: 4px;
+       background: #ffffff9d;
+       border-radius: 50%;
+       box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1),
+              0 0 0 8px rgba(255, 255, 255, 0.1),
+              0 0 20px rgba(255, 255, 255, 0.592);
+       animation: shooting 5s infinite linear;
+       scroll-behavior: none;
+       
+
+
+}
+
+span:nth-child(1) {
+       top: 0;
+       right: 0;
+       left: initial;
+
+       animation-duration: 16s;
+       scroll-behavior: none;
+}
+
+span:nth-child(2) {
+       top: 0;
+       right: 80px;
+       left: initial;
+
+       animation-duration: 19s;
+       scroll-behavior: none;
+}
+
+span:nth-child(3) {
+       top: 80px;
+       right: 180px;
+       left: initial;
+
+       animation-duration: 15s;
+       scroll-behavior: none;
+}
+
+span:nth-child(4) {
+       top: 5px;
+       right: 0px;
+       left: initial;
+
+       animation-duration: 10s;
+       scroll-behavior: none;
+}
+
+span:nth-child(5) {
+       top: 10px;
+       right: 90px;
+       left: initial;
+
+       animation-duration: 18s;
+       scroll-behavior: none;
+}
+
+span:nth-child(6) {
+       top: 20px;
+       right: 100px;
+       left: initial;
+
+       animation-duration: 22s;
+       scroll-behavior: none;
+}
+
+span:nth-child(7) {
+       top: 100px;
+       right: 50px;
+       left: initial;
+
+       animation-duration: 25s;
+       scroll-behavior: none;
+}
+
+span:nth-child(8) {
+       top: 50px;
+       right: 150px;
+       left: initial;
+
+       animation-duration: 20s;
+       scroll-behavior: none;
+}
+
+span:nth-child(9) {
+       top: 20%;
+       right: 150px;
+       left: initial;
+
+       animation-duration: 24s;
+       scroll-behavior: none;
+}
+
+span:nth-child(10) {
+       top: 10%;
+       right: 0px;
+
+
+       animation-duration: 16s;
+       scroll-behavior: none;
+}
+
+span::before {
+       content: "";
+       position: absolute;
+       top: 50%;
+       transform: translateY(-50%);
+       width: 300px;
+       height: 2px;
+       background-image: linear-gradient(90deg, #fff, transparent);
+
+}
+
+@keyframes shooting {
+
+       0% {
+              transform: rotate(315deg) translateX(0);
+              opacity: 1;
+              scroll-behavior: none;
+
+       }
+
+       100% {
+              transform: rotate(315deg) translateX(-10000px);
+              opacity: 0;
+              scroll-behavior: none;
+
+
+       }
+}
